@@ -40,11 +40,11 @@ a {
 }
 
 a:link:active {
-	color: #00ffff;
+	color: #96ffff;
 }
 
 a:visited:active {
-	color: #96ffff;
+	color: #00ffff;
 }
 
 /* --------------------
