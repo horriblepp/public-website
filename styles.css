@@ -93,10 +93,7 @@ h6 {
 -- Disqus
 -------------------- */
 
-.hide-social-discuss {
-	background: white; // change color according to your site back.
-	height: 20px;
-	position: relative;
+disqus_thread {
 	width: 80%;
 	top: -60px;
 }
