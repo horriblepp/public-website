@@ -1,19 +1,94 @@
+/* --------------------
+-- Base
+-------------------- */
+header {
+  display: block;
+}
+
 body {
 	background-color: #202020;
+	display: block;
 }
+
+body:focus {
+  outline: none;
+}
+
+/* --------------------
+-- Selected Elements
+-------------------- */
 
 ::selection {
 	background: #00ffff;
-	color: #fff;
+	color: #ffffff;
 	text-shadow: none;
 }
 
 ::-moz-selection {
 	background: #00ffff;
-	color: #fff;
+	color: #ffffff;
 	text-shadow: none;
 }
 
+/* --------------------
+-- Hyperlinks
+-------------------- */
+
 a {
 	color: #00ffff;
+	cursor: auto;
+}
+
+a:link:active, a:visited:active {
+  color: #00c3ff;
+}
+
+/* --------------------
+-- Text
+-------------------- */
+
+p {
+	color: #ffffffff;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+
+}
+
+h1 {
+	color: #00ffff;
+}
+
+h2 {
+	color: #ffffffff;
+}
+
+h3 {
+	color: #ffffffff;
+}
+
+h4 {
+	color: #ffffffff;
+}
+
+h5 {
+	color: #ffffffff;
+}
+
+h6 {
+	color: #ffffffff;
+}
+
+/* --------------------
+-- Disqus
+-------------------- */
+
+.hide-social-discuss {
+	background: white; // change color according to your site back.
+	height: 20px;
+	position: relative;
+	width: 80%;
+	top: -60px;
 }
