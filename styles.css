@@ -34,21 +34,21 @@ body:focus {
 -- Hyperlinks
 -------------------- */
 
-a {
+a:link {
 	color: #00ffff;
-	cursor: auto;
-}
-
-a:active {
-	color: #ffffff;
-}
-
-a:hover {
-	color: #96ffff;
 }
 
 a:visited {
 	color: #00ffff;
+}
+
+a:hover {
+	color: #96ffff;
+	cursor: pointer;
+}
+
+a:active {
+	color: #ffffff;
 }
 
 /* --------------------
