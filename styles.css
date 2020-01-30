@@ -1,0 +1,19 @@
+body {
+	background-color: #202020;
+}
+
+::selection {
+	background: #00ffff;
+	color: #fff;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: #00ffff;
+	color: #fff;
+	text-shadow: none;
+}
+
+a {
+	color: #00ffff;
+}
