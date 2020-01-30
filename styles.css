@@ -39,11 +39,15 @@ a {
 	cursor: auto;
 }
 
-a:link:active {
+a:active {
+	color: #ffffff;
+}
+
+a:hover {
 	color: #96ffff;
 }
 
-a:visited:active {
+a:visited {
 	color: #00ffff;
 }
 
