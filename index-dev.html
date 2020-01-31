@@ -29,10 +29,19 @@
 			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
 			return i;
 		}
-		
+	</script>
+	
+	<p> Your screen width:</p>
+	<script>
+		document.write(screen.width);
+	</script>
+	<script>
 		function checkMobile() {
 			if( screen.width <= 480 ) {
 				location.href = '/index-mobile.html'
+				document.write('Are you on a mobile device?');
+			} else {
+				document.write('Are you on a PC or tablet?');
 			}
 		}
 	</script>
