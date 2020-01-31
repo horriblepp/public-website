@@ -31,19 +31,21 @@
 		}
 	</script>
 	
-	<p> Your screen width:</p>
+	<p> Your screen width:
 	<script>
 		document.write(screen.width);
 	</script>
+	</p>
+	<br />
 	<script>
-		function checkMobile() {
+		//function checkMobile() {
 			if( screen.width <= 480 ) {
 				location.href = '/index-mobile.html'
 				document.write('Are you on a mobile device?');
 			} else {
 				document.write('Are you on a PC or tablet?');
 			}
-		}
+		//}
 	</script>
 
 	<a href ="https://horriblepp.tumblr.com">Hey, you found my link test!</a>
