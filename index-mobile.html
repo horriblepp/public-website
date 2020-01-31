@@ -12,35 +12,8 @@
 
 
 <body>
-
-	<script>
-		function startTime() {
-			var today = new Date();
-			var h = today.getHours();
-			var m = today.getMinutes();
-			var s = today.getSeconds();
-			m = checkTime(m);
-			s = checkTime(s);
-			document.getElementById('txt').innerHTML =
-			h + ":" + m + ":" + s;
-			var t = setTimeout(startTime, 500);
-		}
-		function checkTime(i) {
-			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-			return i;
-		}
-		
-		function checkMobile() {
-			if( screen.width <= 480 ) {
-				location.href = '/index-mobile.html'
-			}
-		}
-	</script>
-
-	<a href ="https://horriblepp.tumblr.com">Hey, you found my link test!</a>
 	
-	<body onload="startTime()">
-	<p>Local Time:</p><div id="txt"></div>
+	<p>Hey, you're on the mobile site!</p></div>
 
 	<div id="disqus_thread"></div>
 	<script>

@@ -13,42 +13,65 @@
 
 <body>
 
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
-     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
-     *  PLATFORM OR CMS.
-     *  
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
-     *  https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    /*
-    var disqus_config = function () {
-        // Replace PAGE_URL with your page's canonical URL variable
-        this.page.url = https://horriblepp.github.io/public-website/;  
-        
-        // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        this.page.identifier = horriblepp; 
-    };
-    */
-    
-    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-        var d = document, s = d.createElement('script');
-        
-        // IMPORTANT: Replace EXAMPLE with your forum shortname!
-        s.src = 'https://horriblepp.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>
-    Please enable JavaScript to view the 
-    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
-        comments powered by Disqus.
-    </a>
-</noscript>
+	<script>
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML =
+			h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			return i;
+		}
+	</script>
+
+	<a href ="https://horriblepp.tumblr.com">Hey, you found my link test!</a>
+	
+	<body onload="startTime()">
+	<p>Local Time:</p><div id="txt"></div>
+
+	<div id="disqus_thread"></div>
+	<script>
+		/**
+		 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+		 *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+		 *  PLATFORM OR CMS.
+		 *  
+		 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+		 *  https://disqus.com/admin/universalcode/#configuration-variables
+		 */
+		/*
+		var disqus_config = function () {
+			// Replace PAGE_URL with your page's canonical URL variable
+			this.page.url = https://horriblepp.github.io/public-website/;  
+			
+			// Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			this.page.identifier = horriblepp; 
+		};
+		*/
+		
+		(function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+			var d = document, s = d.createElement('script');
+			
+			// IMPORTANT: Replace EXAMPLE with your forum shortname!
+			s.src = 'https://horriblepp.disqus.com/embed.js';
+			
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	<noscript>
+		Please enable JavaScript to view the 
+		<a href="https://disqus.com/?ref_noscript" rel="nofollow">
+			comments powered by Disqus.
+		</a>
+	</noscript>
 
 </body>
 
