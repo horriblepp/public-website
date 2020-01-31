@@ -107,3 +107,9 @@ disqus_thread {
 	width: 80%;
 	top: -60px;
 }
+
+disqus_thread:selection {
+	background: #ff0000;
+	color: #00ff00;
+	text-shadow: none;
+}
