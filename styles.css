@@ -113,3 +113,15 @@ disqus_thread:selection {
 	color: #00ff00;
 	text-shadow: none;
 }
+
+#form {
+	background: #404040;
+	color: #ffffff;
+	text-shadow: none;
+}
+
+#comment__share {
+	background: #00ff00;
+	color: #ff0000;
+	text-shadow: none;
+}
