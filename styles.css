@@ -19,14 +19,14 @@ body:focus {
 -------------------- */
 
 ::selection {
-	background: #00ffff;
-	color: #ffffff;
+	background: #ffffff;
+	color: #000000;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: #00ffff;
-	color: #ffffff;
+	background: #ffffff;
+	color: #000000;
 	text-shadow: none;
 }
 
